@@ -9,7 +9,7 @@ POST http://localhost:3000/orders
 Content-Type: application/json
 
 {
-  "amount": 20000
+  "amount": 10000
 }
 ###
 
@@ -21,4 +21,4 @@ Content-Type: application/json
   "status": "approved"
 }
 ###
-DELETE  http://localhost:3000/orders/38947f29-15a1-41de-8495-46dc41f4a404
+DELETE  http://localhost:3000/orders/33dcd148-2dec-4e68-8994-2fffa34cd7dd

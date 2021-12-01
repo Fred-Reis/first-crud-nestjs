@@ -6,6 +6,8 @@ import {
   Patch,
   Param,
   Delete,
+  HttpStatus,
+  HttpCode,
 } from '@nestjs/common';
 import { OrdersService } from './orders.service';
 import { CreateOrderDto } from './dto/create-order.dto';
@@ -35,6 +37,7 @@ export class OrdersController {
     return this.ordersService.update(id, updateOrderDto);
   }
 
+  @HttpCode(204)
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.ordersService.remove(id);
